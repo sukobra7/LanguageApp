@@ -1,7 +1,15 @@
-= form_with model: @quesion do |f|
-  = f.label :title
-  = f.text_field :title
-  = f.label :text
-  = f.text_field :text
-  .actions
-    = f.submit '投稿する'
+.container
+  h1 
+    | New Question
+  .row
+    = form_with model: @question do |form|
+      .col-sm-6
+        = form.label :title
+      .col-sm-6
+        = form.text_field :title
+      .col-sm-6
+        = form.label :text
+      .col-sm-6
+        = form.text_area :text
+      .actions
+        = form.submit '投稿する', class: "btn btn-primary"
