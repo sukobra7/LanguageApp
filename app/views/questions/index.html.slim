@@ -1,0 +1,8 @@
+h1
+  | Questions#index
+p
+  - @questions.each do |q|
+    = q.title
+    br
+    = q.text
+
