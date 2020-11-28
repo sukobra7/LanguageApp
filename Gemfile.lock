@@ -81,6 +81,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    diffy (3.4.0)
     erubi (1.10.0)
     ffi (1.13.1)
     globalid (0.4.2)
@@ -155,6 +156,9 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    ridgepole (0.8.10)
+      activerecord (>= 5.0.1, < 6.1)
+      diffy
     rubyzip (2.3.0)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -235,6 +239,7 @@ DEPENDENCIES
   mysql2
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.3)
+  ridgepole
   sass-rails (>= 6)
   seed-fu
   selenium-webdriver

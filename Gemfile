@@ -60,3 +60,5 @@ gem 'slim-rails'
 gem 'html2slim'
 
 gem 'seed-fu'
+
+gem 'ridgepole'
